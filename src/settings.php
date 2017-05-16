@@ -7,6 +7,7 @@ return [
         // Renderer settings
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
+            'views' => __DIR__ . '/../views/',
         ],
 
         // Monolog settings
