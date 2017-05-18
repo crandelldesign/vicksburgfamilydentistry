@@ -107,6 +107,7 @@ gulp.task('sass', ['minify-css'], function () {
         }))
         .pipe(sass())
         .pipe(gulp.dest('./public/css'))
+        .pipe(rename('theme.min.css'))
     return stream;
 });
 
