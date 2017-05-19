@@ -26,7 +26,7 @@
         </style>
     </head>
     <body>
-        <h1>Vicksburg Family Dentistsry <?php echo date('Y')?></h1>
+        <h1>Vicksburg Family Dentistry <?php echo date('Y')?></h1>
         <div>a microframework for PHP</div>
 
         <?php if (isset($name)) : ?>
