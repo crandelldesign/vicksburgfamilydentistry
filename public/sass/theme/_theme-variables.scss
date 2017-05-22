@@ -5,7 +5,8 @@
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
-$font-family-sans-serif:Arial, sans-serif;
+$font-family-sans-serif: 'Roboto', Arial, sans-serif;
+$font-family-serif: 'Cormorant Garamond', 'Garamond', serif;
 $brand-primary:         #7852B2; //#ff6d5a
 
 // Basics of a navbar
@@ -15,20 +16,26 @@ $navbar-border-radius:             0px;
 
 
 // Colors
-$vermillion: #f44503;
-$coral: lighten($vermillion,15%); //#FD7947
+$emporor: #555555;
+$deep_cerulean: #006DB0;
+$swamp: #000E16;
+$azure_radiance: #009EFF;
+$silver_sand: #BBBDBF;
+$cerulean: #0AB1C7;
+//$vermillion: #f44503;
+/*$coral: lighten($vermillion,15%); //#FD7947
 $mona_lisa: lighten($vermillion, 30%); //#FEB092
 $fire: darken($vermillion,15%); //#a83002
 $midnight_blue: #003163;
 $endeavour: lighten($midnight_blue,15%); //#0057B0
 $azure: lighten($midnight_blue,30%); //#007DFC
 $blue_charcoal: darken($midnight_blue,15%); //#000B17
-$ship_gray: #404041;
+$ship_gray: #404041;*/
 
-$link-color: $coral;
-$link-hover-color: $vermillion;
+$link-color: $azure_radiance;
+$link-hover-color: $deep_cerulean;
 
-$text-muted: #959595;
-$hr-border-color: $midnight_blue;
+//$text-muted: #959595;
+$hr-border-color: $deep_cerulean;
 
-$border-radius: 0;
+$font-size-base: 16px;

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vicksburg Family Dentistry | Style Guide</title>
-        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
         <link href="/css/theme.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <div class="container">
-            <h1>Vicksburg Family Dentistry <?php echo date('Y')?></h1>
-            <div>a microframework for PHP</div>
+        <div class="page container">
+            <header class="header">
+                <div class="logo">
+                    <img src="/img/vicksburg-family-dentistry-logo.svg" class="img-responsive center-block" alt="Vicksburg Family Dentistry">
+                </div>
+            </header>
 
             <div class="content">
                 <div class="row">
@@ -19,50 +30,38 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="color-swatch swatch1">
-                                    Vermillion<br>
-                                    #F44503
+                                    Emporor<br>
+                                    #555555
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch2">
-                                    Coral<br>
-                                    #FD7947
+                                    Deep Cerulean<br>
+                                    #006DB0
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch3">
-                                    Mona Lisa<br>
-                                    #FEB092
+                                    Swamp<br>
+                                    #000E16
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch4">
-                                    Midnight Blue<br>
-                                    #003163
+                                    Azure Radiance<br>
+                                    #009EFF
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch5">
-                                    Azure<br>
-                                    #007DFC
+                                    Silver Sand<br>
+                                    #BBBDBF
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch6">
-                                    Endeavour<br>
-                                    #0057B0
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="color-swatch swatch7">
-                                    Blue Charcoal<br>
-                                    #000B17
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="color-swatch swatch8">
-                                    Ship Gray<br>
-                                    #404041
+                                    Cerulean<br>
+                                    #0AB1C7
                                 </div>
                             </div>
                         </div>
