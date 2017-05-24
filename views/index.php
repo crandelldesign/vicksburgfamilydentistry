@@ -34,5 +34,18 @@
         <?php else: ?>
             <p>Try <a href="http://www.slimframework.com">SlimFramework</a>
         <?php endif; ?>
+
+        <div itemscope itemtype="http://schema.org/Dentist">
+            <span itemprop="name">Vicksburg Family Dentistry</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">602 West Prairie Street</span>
+                <span itemprop="addressLocality">Vicksburg</span>,
+                <span itemprop="addressRegion">MI</span>
+                <a href="tel:12696491495" itemprop="postalCode">49009</span>
+            </div>
+            Phone: <span itemprop="telephone">269-649-1495</span>
+            <a href="http://googlemapsurl.com" itemprop="maps">Get Directions</a>
+        </div>
+
     </body>
 </html>

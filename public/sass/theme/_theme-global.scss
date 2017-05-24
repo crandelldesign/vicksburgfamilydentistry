@@ -1,10 +1,89 @@
 // Global Styles
 
 body {
-    color: #232323;
+    color: $swamp;
+    background: $deep_cerulean url('/img/hex.png');
+}
+
+.page {
+    @include page-width();
+    background: #FFFFFF;
+    @include shadow-5();
 }
 
 h1 {
     font-family: $font-family-serif;
     font-weight: bold;
+    color: $deep_cerulean;
+}
+
+h2 {
+    font-family: $font-family-serif;
+    font-weight: bold;
+    color: $cerulean;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+a.hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 30px;
+}
+
+// Buttons
+
+.btn {
+    transition: background-color 0.5s ease;
+}
+
+.btn-deep-cerulean {
+    background-color: $deep_cerulean;
+    border-color: $swamp;
+    color: #FFFFFF;
+    &:hover {
+        background-color: lighten($deep_cerulean,10%);
+        color: #FFFFFF;
+    }
+}
+
+.btn-emporor {
+    background-color: $emporor;
+    border-color: $swamp;
+    color: #FFFFFF;
+    &:hover {
+        background-color: lighten($emporor,10%);
+        color: #FFFFFF;
+    }
+}
+
+// Cards
+.card {
+    background-color: #FFF;
+    border: 1px solid $emporor;
+    border-radius: $border-radius-base;
+    margin-bottom: 30px;
+    @include shadow-1();
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid $silver_sand;
+        &:first-child {
+            border-radius: $border-radius-base $border-radius-base 0 0;
+        }
+    }
+    h2.card-header {
+        background-color: $cerulean;
+        color: #FFF;
+        border-bottom: 1px solid $emporor;
+    }
+    .card-block {
+        padding: 1.25rem;
+    }
 }
