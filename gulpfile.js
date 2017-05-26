@@ -197,6 +197,12 @@ gulp.task('scripts', function() {
 
         // BS3
         basePaths.dev + 'js/bootstrap/bootstrap.js',
+
+        // AOS
+        basePaths.dev + 'js/aos/aos.js',
+
+        // Global JS
+        './public/js/src/global.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
@@ -243,6 +249,12 @@ gulp.task('copy-assets', ['clean-source'], function() {
 // Copy jQuery
     gulp.src(basePaths.node + 'jquery/dist/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/jquery'));
+
+// Copy AOS
+    gulp.src(basePaths.node + 'aos/dist/**/*.js')
+       .pipe(gulp.dest(basePaths.dev + '/js/aos'));
+    gulp.src(basePaths.node + 'aos/src/sass/**/*.scss')
+       .pipe(gulp.dest(basePaths.dev + '/sass/aos'));
 
     return stream;
 });

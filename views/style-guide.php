@@ -18,13 +18,13 @@
         <div class="page">
             <header class="header">
                 <div class="logo">
-                    <img src="/img/vicksburg-family-dentistry-logo.svg" class="img-responsive" alt="Vicksburg Family Dentistry">
+                    <img src="/img/vicksburg-family-dentistry-logo.svg" class="img-responsive" alt="Vicksburg Family Dentistry" data-aos="zoom-in">
                 </div>
             </header>
 
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-right">
                         <h1>Color Palette</h1>
 
                         <div class="row">
@@ -77,7 +77,7 @@
                         <hr class="visible-xs-block">
 
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-left">
                         <h1>Typography</h1>
 
                         <h1>Heading 1</h1>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <h1>Features</h1>
-                <div class="row">
+                <div class="row" data-aos="fade-down">
                     <div class="col-sm-4">
                         <div class="card">
                             <h2 class="card-header">Responsive Design</h2>
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-sm-4">
                         <div class="card">
                             <h2 class="card-header">Built-in Contact Form</h2>
