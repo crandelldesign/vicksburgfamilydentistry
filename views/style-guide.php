@@ -24,7 +24,7 @@
 
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-6" data-aos="fade-right">
+                    <div class="col-sm-6">
                         <h1>Color Palette</h1>
 
                         <div class="row">
@@ -77,7 +77,7 @@
                         <hr class="visible-xs-block">
 
                     </div>
-                    <div class="col-sm-6" data-aos="fade-left">
+                    <div class="col-sm-6">
                         <h1>Typography</h1>
 
                         <h1>Heading 1</h1>
@@ -105,9 +105,9 @@
                     </div>
                 </div>
                 <h1>Features</h1>
-                <div class="row" data-aos="fade-down">
+                <div class="row">
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">Responsive Design</h2>
                             <div class="card-block">
                                 <p>Works on any device</p>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">Super Fast</h2>
                             <div class="card-block">
                                 <p>Fast loading single page website</p>
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">Responsive Design</h2>
                             <div class="card-block">
                                 <p>Works on any device</p>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="row" data-aos="fade-up">
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">Built-in Contact Form</h2>
                             <div class="card-block">
                                 <p>Easy for potential clients to contact you</p>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">User-Friendly Interface</h2>
                             <div class="card-block">
                                 <p>Designed with 2017 trends in mind</p>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <h2 class="card-header">Search Engine Optimized</h2>
                             <div class="card-block">
                                 <p>Created from the ground up so Google can find you</p>

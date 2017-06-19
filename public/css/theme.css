@@ -8870,6 +8870,13 @@ a.hover {
     background-color: #6f6f6f;
     color: #FFFFFF; }
 
+.btn-white-outline {
+  border-color: #FFF;
+  color: #FFF; }
+  .btn-white-outline:hover, .btn-white-outline:focus {
+    background-color: #FFF;
+    color: #006DB0; }
+
 .card {
   background-color: #FFF;
   border: 1px solid #555555;
@@ -8889,6 +8896,11 @@ a.hover {
     background-color: #0AB1C7;
     color: #FFF;
     border-bottom: 1px solid #555555; }
+  .card h3.card-header {
+    background-color: #0AB1C7;
+    color: #FFF;
+    border-bottom: 1px solid #555555;
+    font-size: 25px; }
   .card .card-block {
     padding: 1.25rem; }
 
@@ -9013,3 +9025,34 @@ footer.footer {
 
 .details {
   color: #777777; }
+
+.section.main {
+  background: #0ab1c7;
+  background: -webkit-linear-gradient(top left, #0ab1c7, #006db0);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top left, #0ab1c7, #006db0);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top left, #0ab1c7, #006db0);
+  /*Fx 3.6-15*/
+  background: linear-gradient(top left, #0ab1c7, #006db0);
+  /*Standard*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  color: #FFF; }
+  .section.main h1 {
+    color: #FFF;
+    margin-bottom: 25px; }
+  .section.main p {
+    margin-bottom: 25px; }
+  .section.main img {
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid #FFF; }
+
+.section #map {
+  height: 400px;
+  width: 100%; }

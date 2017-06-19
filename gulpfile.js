@@ -118,7 +118,7 @@ gulp.task('sass', ['minify-css'], function () {
 gulp.task('watch', function () {
     gulp.watch('./public/sass/**/*.scss', ['sass']);
     gulp.watch('./public/css/theme.css', ['minify-css']);
-    gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','!js/theme.js','!js/theme.min.js'], ['scripts']);
+    gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','public/js/src/**/*.js','!js/theme.js','!js/theme.min.js'], ['scripts']);
 
     //Inside the watch task.
     gulp.watch('./img/**', ['imagemin'])
@@ -201,6 +201,9 @@ gulp.task('scripts', function() {
         // AOS
         basePaths.dev + 'js/aos/aos.js',
 
+        // MoveTo
+        basePaths.dev + 'js/moveto/moveTo.js',
+
         // Global JS
         './public/js/src/global.js'
     ];
@@ -255,6 +258,10 @@ gulp.task('copy-assets', ['clean-source'], function() {
        .pipe(gulp.dest(basePaths.dev + '/js/aos'));
     gulp.src(basePaths.node + 'aos/src/sass/**/*.scss')
        .pipe(gulp.dest(basePaths.dev + '/sass/aos'));
+
+// Copy MoveTo
+    gulp.src(basePaths.node + 'moveto/dist/*.js')
+        .pipe(gulp.dest(basePaths.dev + '/js/moveto'));
 
     return stream;
 });

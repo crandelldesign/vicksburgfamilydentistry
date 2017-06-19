@@ -1,0 +1,31 @@
+// Sections
+.section {
+    &.main {
+        background: #0ab1c7;
+        background: -webkit-linear-gradient(top left,rgb(10, 177, 199),rgb(0, 109, 176)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(top left,rgb(10, 177, 199),rgb(0, 109, 176)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(top left,rgb(10, 177, 199),rgb(0, 109, 176)); /*Fx 3.6-15*/
+        background: linear-gradient(top left, rgb(10, 177, 199), rgb(0, 109, 176)); /*Standard*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        color: #FFF;
+        h1 {
+            color: #FFF;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        img {
+            @include shadow-3();
+            border: 5px solid #FFF;
+        }
+    }
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+}
