@@ -123,9 +123,10 @@ function initMap() {
           position: place.geometry.location
         });
         google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+            infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
             place.formatted_address + '</div>');
-          infowindow.open(map, this);
+            // Add link to open in Google Maps
+            infowindow.open(map, this);
         });
       }
     });
