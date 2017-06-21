@@ -13,18 +13,18 @@ body {
 
 h1 {
     font-family: $font-family-serif;
-    font-weight: bold;
+    font-weight: 600;
     color: $deep_cerulean;
 }
 
 h2 {
     font-family: $font-family-serif;
-    font-weight: bold;
+    font-weight: 600;
     color: $cerulean;
 }
 
 h3 {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 a.hover {
@@ -97,6 +97,7 @@ a.hover {
         color: #FFF;
         border-bottom: 1px solid $emporor;
         font-size: 25px;
+        font-weight: 400;
     }
     .card-block {
         padding: 1.25rem;

@@ -12976,9 +12976,10 @@ function initMap() {
           position: place.geometry.location
         });
         google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-            place.formatted_address + '</div>');
-          infowindow.open(map, this);
+            infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+            place.formatted_address + '<br>'+
+            '<a href="'+place.url+'" target="_blank">View on Google Maps</a>'+'</div>');
+            infowindow.open(map, this);
         });
       }
     });

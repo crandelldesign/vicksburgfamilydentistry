@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vicksburg Family Dentistry | Style Guide</title>
-        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:400,400i,700,700i" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:400,400i,700,700i" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,600,600i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
         <link href="/css/theme.min.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

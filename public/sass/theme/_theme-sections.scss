@@ -24,8 +24,26 @@
             border: 5px solid #FFF;
         }
     }
+    &.contact-us {
+        background: #0ab1c7;
+        background: -webkit-linear-gradient(top left,rgb(0, 109, 176),rgb(10, 177, 199)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(top left,rgb(0, 109, 176),rgb(10, 177, 199)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(top left,rgb(0, 109, 176),rgb(10, 177, 199)); /*Fx 3.6-15*/
+        background: linear-gradient(top left, rgb(0, 109, 176), rgb(10, 177, 199)); /*Standard*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2 {
+            color: #FFF;
+        }
+    }
+    > .content > h2 {
+        margin-top: 0;
+    }
     #map {
         height: 400px;
         width: 100%;
+        margin-bottom: 30px;
     }
 }

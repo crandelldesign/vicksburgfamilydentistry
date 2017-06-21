@@ -124,8 +124,8 @@ function initMap() {
         });
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-            place.formatted_address + '</div>');
-            // Add link to open in Google Maps
+            place.formatted_address + '<br>'+
+            '<a href="'+place.url+'" target="_blank">View on Google Maps</a>'+'</div>');
             infowindow.open(map, this);
         });
       }
