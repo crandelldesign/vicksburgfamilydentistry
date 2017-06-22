@@ -26,7 +26,8 @@
     "gulp-watch": "^4.3.11",
     "jquery": "^3.2.1",
     "moveto": "^1.6.1",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "gulp-connect-php": "^1.0.1"
   },
   "devDependencies": {}
 }

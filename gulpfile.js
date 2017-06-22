@@ -18,7 +18,9 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/",
+    proxy: '127.0.0.1:8010',
+    port: 8080,
+    open: true,
     notify: false
 };
 
@@ -41,7 +43,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var cleanCSS = require('gulp-clean-css');
-
+var php = require('gulp-connect-php');
 
 // Run:
 // gulp sass + cssnano + rename
@@ -121,14 +123,14 @@ gulp.task('watch', function () {
     gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','public/js/src/**/*.js','!js/theme.js','!js/theme.min.js'], ['scripts']);
 
     //Inside the watch task.
-    gulp.watch('./img/**', ['imagemin'])
+    gulp.watch('./public/img/**', ['imagemin'])
 });
 
 // Run:
 // gulp imagemin
 // Running image optimizing task
 gulp.task('imagemin', function(){
-    gulp.src('img/src/**')
+    gulp.src('public/img/src/**')
     .pipe(imagemin())
     .pipe(gulp.dest('img'))
 });
@@ -173,9 +175,16 @@ gulp.task('cleancss', function() {
 
 
 // Run:
+// gulp php
+// Starts PHP server
+gulp.task('php', function() {
+    php.server({ base: 'public', port: 8010, keepalive: true});
+});
+
+// Run:
 // gulp browser-sync
 // Starts browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync',['php'], function() {
     browserSync.init(browserSyncWatchFiles, browserSyncOptions);
 });
 
@@ -227,7 +236,7 @@ gulp.task('clean-source', function () {
 // Copy all needed dependency assets files from bower_component assets to themes /js, /scss and /fonts folder. Run this task after bower install or bower update
 
 ////////////////// All Bootstrap SASS  Assets /////////////////////////
-gulp.task('copy-assets', ['clean-source'], function() {
+gulp.task('copy-assets', function() {
 
 ////////////////// All Bootstrap 3 Assets /////////////////////////
 // Copy all Bootstrap JS files

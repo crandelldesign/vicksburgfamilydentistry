@@ -48,10 +48,10 @@ $app->post('/', function ($request, $response, $args) {
 
     /* Verify Captcha */
     $captcha_response = verifyCaptcha($_POST['g-recaptcha-response']);
-    /*if (!$captcha_response->success) {
+    if (!$captcha_response->success) {
         $error = true;
         $has_error['recaptcha'] = true;
-    }*/
+    }
 
     if ($error == false) {
         // Mailgun Credentials Instantiate the client.
@@ -62,11 +62,11 @@ $app->post('/', function ($request, $response, $args) {
 
         /* Email Admin */
 
-        $htmlEmail = file_get_contents('/library/html/email.html');
+        $htmlEmail = file_get_contents(__DIR__ . '/../public/html/email.html');
 
         /* Replace Logo */
-        //$logo = get_template_directory_uri().'/library/images/nuviewnutrition-logo-email.jpg';
-        //$htmlEmail = str_replace('../images/nuviewnutrition-logo-email.jpg', $logo, $htmlEmail);
+        $logo = getenv('APP_URL').'/img/vicksburg-family-dentistry-logo-email.jpg';
+        $htmlEmail = str_replace('../img/vicksburg-family-dentistry-logo-email.jpg', $logo, $htmlEmail);
 
         $formDataEmail = '<br><table style="color: #636466; font-family: \'Helvetica\' \'Arial\', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px;">
                 <tr>
@@ -87,9 +87,6 @@ $app->post('/', function ($request, $response, $args) {
                 <tr>
                     <td colspan="2">' . $form_data['message'] . '</td>
                 </tr>
-                <tr>
-                    <td colspan="2">' . (($form_data['mc4wp-subscribe']) ? 'Yes, I would like to subscribe to the newsletter.' : 'No, I would not like to subscribe to the newsletter.') . '</td>
-                </tr>
             </table>';
 
         $htmlEmail = str_replace('!*data*!', $formDataEmail, $htmlEmail);
@@ -108,8 +105,10 @@ $app->post('/', function ($request, $response, $args) {
         unset($form_data);
         unset($has_error);
     }
-    $args['form_data'] = $form_data;
-    $args['has_error'] = $has_error;
+    if (isset($form_data))
+        $args['form_data'] = $form_data;
+    if (isset($has_error))
+        $args['has_error'] = $has_error;
     $args['error'] = $error;
     $args['result'] = $result;
     return $this->renderer->render($response, 'index.php', $args);

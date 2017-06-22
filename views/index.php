@@ -31,7 +31,14 @@
                     <img src="/img/vicksburg-family-dentistry-logo.svg" class="img-responsive" alt="Vicksburg Family Dentistry" data-aos="zoom-in">
                 </div>
             </header>
-            <nav class="nav">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="#services" data-mt-duration="300" class="js-trigger">Services</a></li>
+                        <li class="nav-item"><a href="#contact-us" data-mt-duration="300" class="js-trigger">Contact Us</a></li>
+                        <li class="nav-item"><a href="#about-us" data-mt-duration="300" class="js-trigger">About Us</a></li>
+                    </ul>
+              </div>
             </nav>
             <!-- Main Section -->
             <section class="section main">
@@ -105,7 +112,7 @@
 
                 </div>
             </section>
-            <section class="section contact-us">
+            <section class="section contact-us" id="contact-us">
                 <div class="content">
                     <h2>Contact Us</h2>
                 </div>
@@ -145,9 +152,14 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="form-group <?= ((isset($has_error['message']) && $has_error['message']) ? ' has-error' : '')?>"">
                                             <textarea class="form-control" name="message" cols="30" rows="5" placeholder="Enter Message"><?= (isset($form_data) && array_key_exists('message', $form_data) ? $form_data['message'] : '') ?></textarea>
                                             <?= ((isset($has_error['message']) && $has_error['message']) ? '<span class="help-block">Please leave a message.</span>' : '') ?>
+                                        </div>
+                                        <div class="form-group <?= ((isset($has_error['recaptcha']) && $has_error['recaptcha']) ? ' has-error' : '')?>"">
+                                            <div class="g-recaptcha" data-sitekey="6LfogCYUAAAAAC7dB1o7Hx4nAYSjTSXgXbthvPJY"></div>
+                                            <?= ((isset($has_error['recaptcha']) && $has_error['recaptcha']) ? '<span class="help-block">Recaptcha verification has failed.</span>' : '') ?>
                                         </div>
                                         <button type="submit" class="btn btn-deep-cerulean btn-block">Send Message</button>
                                     </form>
@@ -214,7 +226,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section about-us">
+            <section class="section about-us" id="about-us">
                 <div class="content">
                     <h2>About Us</h2>
                     <h3>Dr. Aaron C. Ford</h3>
@@ -236,6 +248,7 @@
                 <p>Website created by Matt Crandell of <a href="http://www.crandelldesign.com" target="_blank">Crandell Design</a>.</p>
             </footer>
         </div>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="/js/theme.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCqvM0q7JDd9137Vz9BZk9RzkOYkMo5Mc&libraries=places&callback=initMap"></script>
     </body>

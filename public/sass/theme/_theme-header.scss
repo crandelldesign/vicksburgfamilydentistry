@@ -9,3 +9,25 @@ header.header {
         margin: 0 auto;
     }
 }
+nav.navbar {
+    background-color: $silver-sand;
+    border: 0;
+    .nav.navbar-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        @media (min-width: 768px) {
+            float: none;
+        }
+        a {
+            color: #FFF;
+            transition: background-color 0.5s ease;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            &:hover {
+                background-color: $deep_cerulean;
+            }
+        }
+    }
+}
