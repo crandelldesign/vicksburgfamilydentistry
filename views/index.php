@@ -14,6 +14,15 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <noscript>
+            <style>
+                *[data-aos] {
+                    display: block !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            </style>
+        </noscript>
     </head>
     <body>
         <div class="page">
@@ -54,7 +63,46 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-4">
+                            <div class="card" data-aos="zoom-in">
+                                <h3 class="card-header">Digital X-rays</h3>
+                                <div class="card-block">
+                                    <p>We can provide immediate image preview in high quality of your tooth's structure</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card" data-aos="zoom-in">
+                                <h3 class="card-header">Cosmetic/Restorative Dentistry</h3>
+                                <div class="card-block">
+                                    <p>Receive the smile you’ve always wanted</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <h3 class="text-center">Other Services</h3>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-3">
+                            <ul>
+                                <li>Oral Surgery (Extractions)</li>
+                                <li>Bridges</li>
+                                <li>Porcelain Veneers</li>
+                                <li>Teeth Whitening</li>
+                                <li>Cosmetic Fillings (White)</li>
+                                <li>Dental Implants</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul>
+                                <li>Crowns</li>
+                                <li>Dentures</li>
+                                <li>Endodontic Procedures (Root Canal)</li>
+                                <li>Soft tissue LASER<br><small>(For cold sores/fever blisters or canker sores)</small></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <section class="section contact-us">
@@ -64,39 +112,44 @@
                 <div id="map"></div>
                 <div class="content">
                     <div class="row" itemscope itemtype="http://schema.org/Dentist">
-                        <div class="col-lg-6 col-md-8 col-md-offset-2 col-lg-offset-0">
+                        <div class="col-lg-6 col-md-8 col-md-offset-2 col-lg-offset-0" id="contact-form">
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Send Us a Message</h3>
                                 <div class="card-block">
-                                    <form method="post">
+                                    <?php if (isset($error) && $error == true) : ?>
+                                        <div class="alert alert-danger">Please correct the errors in red on the form.</div>
+                                    <?php endif; ?>
+                                    <?php if (isset($error) && $error == false && isset($result) && $result != '') : ?>
+                                        <div class="alert alert-success">Thanks for your e-mail! We'll get back to you as soon as we can.</div>
+                                    <?php endif; ?>
+                                    <form method="post" action="#contact-form">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group <?= ((isset($has_error['contactname']) && $has_error['contactname']) ? ' has-error' : '')?>">
+                                                    <input type="text" class="form-control" placeholder="Enter Your Name" name="contactname" value="<?= (isset($form_data) && array_key_exists('contactname', $form_data) ? $form_data['contactname'] : '') ?>">
+                                                    <?= ((isset($has_error['contactname']) && $has_error['contactname']) ? '<span class="help-block">Please fill out your name.</span>' : '') ?>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Enter First Name" required="required" name="first_name">
+                                                <div class="form-group <?= ((isset($has_error['email']) && $has_error['email']) ? ' has-error' : '')?>"">
+                                                    <input type="email" class="form-control" placeholder="Enter Email Address" name="email" value="<?= (isset($form_data) && array_key_exists('email', $form_data) ? $form_data['email'] : '') ?>">
+                                                    <?= ((isset($has_error['email']) && $has_error['email']) ? '<span class="help-block">Please fill out a valid email address.</span>' : '') ?>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Last Name" required="required" name="last_name">
+                                                <div class="form-group <?= ((isset($has_error['phone']) && $has_error['phone']) ? ' has-error' : '')?>"">
+                                                    <input type="text" class="form-control" placeholder="Enter Phone Number" name="phone" value="<?= (isset($form_data) && array_key_exists('phone', $form_data) ? $form_data['phone'] : '') ?>">
+                                                    <?= ((isset($has_error['phone']) && $has_error['phone']) ? '<span class="help-block">Please fill out your phone number.</span>' : '') ?>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" placeholder="Enter Email Address" required="required" name="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Enter Phone Number" required="required" name="phone">
-                                                </div>
-                                            </div>
+                                        <div class="form-group <?= ((isset($has_error['message']) && $has_error['message']) ? ' has-error' : '')?>"">
+                                            <textarea class="form-control" name="message" cols="30" rows="5" placeholder="Enter Message"><?= (isset($form_data) && array_key_exists('message', $form_data) ? $form_data['message'] : '') ?></textarea>
+                                            <?= ((isset($has_error['message']) && $has_error['message']) ? '<span class="help-block">Please leave a message.</span>' : '') ?>
                                         </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" cols="30" rows="5" placeholder="Enter Message" required="required"></textarea>
-                                        </div>
-                                        <buton type="submit" class="btn btn-deep-cerulean btn-block">Send Message</buton>
+                                        <button type="submit" class="btn btn-deep-cerulean btn-block">Send Message</button>
                                     </form>
                                 </div>
                             </div>

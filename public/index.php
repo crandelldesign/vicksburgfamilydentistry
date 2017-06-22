@@ -10,6 +10,9 @@ if (PHP_SAPI == 'cli-server') {
 }
 
 require __DIR__ . '/../vendor/autoload.php';
+// Load Dotenv
+$dotenv = new Dotenv\Dotenv(realpath(__DIR__ . '/..'));
+$dotenv->load();
 
 session_start();
 
@@ -22,6 +25,9 @@ require __DIR__ . '/../src/dependencies.php';
 
 // Register middleware
 require __DIR__ . '/../src/middleware.php';
+
+// Commonly used functions
+require __DIR__ . '/../src/recaptcha-verification.php';
 
 // Register routes
 require __DIR__ . '/../src/routes.php';
