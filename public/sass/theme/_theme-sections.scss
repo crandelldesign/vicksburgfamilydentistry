@@ -37,6 +37,12 @@
         h2 {
             color: #FFF;
         }
+        #rc-imageselect, .g-recaptcha {
+            transform:scale(0.76);
+            -webkit-transform:scale(0.76);
+            transform-origin:0 0;
+            -webkit-transform-origin:0 0;
+        }
     }
     > .content > h2 {
         margin-top: 0;
