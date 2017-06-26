@@ -12856,8 +12856,10 @@ jQuery(document).ready(function ($) {
         once: true
     });
     const moveTo = new MoveTo();
-    const trigger = document.getElementsByClassName('js-trigger')[0];
-    moveTo.registerTrigger(trigger);
+    const triggers = document.getElementsByClassName('js-trigger');
+    for (var i = 0; i < triggers.length; i++) {
+        moveTo.registerTrigger(triggers[i]);
+    }
 });
 
 // Map
