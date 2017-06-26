@@ -44,6 +44,7 @@ var browserSync = require('browser-sync').create();
 var del = require('del');
 var cleanCSS = require('gulp-clean-css');
 var php = require('gulp-connect-php');
+const imageminGuetzli = require('imagemin-guetzli');
 
 // Run:
 // gulp sass + cssnano + rename
@@ -132,7 +133,15 @@ gulp.task('watch', function () {
 gulp.task('imagemin', function(){
     gulp.src('public/img/src/**')
     .pipe(imagemin())
-    .pipe(gulp.dest('img'))
+    .pipe(gulp.dest('public/img'))
+});
+// Run:
+// gulp imagemin
+// Running image optimizing task
+gulp.task('imagemin-jpg', function(){
+    gulp.src('public/img/src/**/*.jpg')
+    .pipe(imagemin([imageminGuetzli()]))
+    .pipe(gulp.dest('public/img'))
 });
 
 
