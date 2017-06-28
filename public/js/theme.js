@@ -12962,10 +12962,6 @@ function initMap() {
             }
         ]
     });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
     var infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
 
