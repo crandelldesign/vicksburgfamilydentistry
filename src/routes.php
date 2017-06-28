@@ -118,3 +118,17 @@ $app->get('/style-guide', function ($request, $response, $args) {
     // Render Style Guide view
     return $this->renderer->render($response, 'style-guide.php', $args);
 });
+
+// 301 Redirects
+$app->get('/services', function ($request, $response, $args) {
+    return $response->withRedirect('/#services', 301);
+});
+$app->get('/about-us', function ($request, $response, $args) {
+    return $response->withRedirect('/#about-us', 301);
+});
+$app->get('/contact-us', function ($request, $response, $args) {
+    return $response->withRedirect('/#contact-us', 301);
+});
+$app->get('/blog', function ($request, $response, $args) {
+    return $response->withRedirect('/', 301);
+});
