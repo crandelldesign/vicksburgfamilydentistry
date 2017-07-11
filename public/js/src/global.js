@@ -1,13 +1,11 @@
-jQuery(document).ready(function ($) {
-    AOS.init({
-        once: true
-    });
-    const moveTo = new MoveTo();
-    const triggers = document.getElementsByClassName('js-trigger');
-    for (var i = 0; i < triggers.length; i++) {
-        moveTo.registerTrigger(triggers[i]);
-    }
+AOS.init({
+    once: true
 });
+const moveTo = new MoveTo();
+const triggers = document.getElementsByClassName('js-trigger');
+for (var i = 0; i < triggers.length; i++) {
+    moveTo.registerTrigger(triggers[i]);
+}
 
 // Map
 function initMap() {

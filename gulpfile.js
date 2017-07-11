@@ -211,10 +211,10 @@ gulp.task('scripts', function() {
     var scripts = [
 
         // JQuery
-        basePaths.dev + 'js/jquery/jquery.js',
+        //basePaths.dev + 'js/jquery/jquery.js',
 
         // BS3
-        basePaths.dev + 'js/bootstrap/bootstrap.js',
+        //basePaths.dev + 'js/bootstrap/bootstrap.js',
 
         // AOS
         basePaths.dev + 'js/aos/aos.js',
