@@ -11,11 +11,16 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-    # Force SSL
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} !localhost
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
     RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
     # Note: It’s also recommended to enable HTTP Strict Transport Security (HSTS)
     # on your HTTPS website to help prevent man-in-the-middle attacks.
@@ -23,11 +28,6 @@
     <IfModule mod_headers.c>
         Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     </IfModule>
-
-    # Handle Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
 </IfModule>
 
 # ######################################################################
