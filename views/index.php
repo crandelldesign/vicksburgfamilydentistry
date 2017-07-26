@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-sm-8 col-sm-pull-4">
                             <h1>Committed to Providing an Exceptional Level of Care and Attention</h1>
-                            <p class="lead">Dr. Aaron Ford and the staff at Vicksburg Family Dentistry works together as a team to provide high-quality comprehensive care. We take pride in paying close attention to each patient's needs.</p>
+                            <p class="lead">Dr. Aaron Ford and the staff at Vicksburg Family Dentistry work together as a team to provide high-quality comprehensive care. We take pride in paying close attention to each patient's needs.</p>
                             <p><a href="#services" data-mt-duration="300" class="js-trigger btn btn-lg btn-white-outline">See Our Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a></p>
                         </div>
 
@@ -81,7 +81,31 @@
                     <h2>Services</h2>
                     <p class="lead">Our expert staffs always provide premium quality service</p>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card" data-aos="zoom-in">
+                                <h3 class="card-header">Restorative / Cosmetic Dentistry</h3>
+                                <div class="card-block">
+                                    <p>Utilizing both composite or white fillings and silver fillings when appropriate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card" data-aos="zoom-in">
+                                <h3 class="card-header">Crowns / Bridges / Implants</h3>
+                                <div class="card-block">
+                                    <p>Extractions both surgical and simple extractions to include 3rd molars or wisdom teeth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card" data-aos="zoom-in">
+                                <h3 class="card-header">Dentures</h3>
+                                <div class="card-block">
+                                    <p>Description needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Ultrasonic Cleaning and Hygiene</h3>
                                 <div class="card-block">
@@ -89,28 +113,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" data-aos="zoom-in">
-                                <h3 class="card-header">Digital X-rays</h3>
-                                <div class="card-block">
-                                    <p>We can provide immediate image preview in high quality of your tooth's structure</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card" data-aos="zoom-in">
-                                <h3 class="card-header">Cosmetic/Restorative Dentistry</h3>
-                                <div class="card-block">
-                                    <p>Receive the smile you’ve always wanted</p>
-                                </div>
-                            </div>
-                        </div>
+
+
                     </div>
 
                     <h3 class="text-center">Other Services</h3>
                     <div class="row">
                         <div class="col-sm-3 col-sm-offset-3">
                             <ul>
+                                <li>Digital X-rays</li>
                                 <li>Oral Surgery (Extractions)</li>
                                 <li>Bridges</li>
                                 <li>Porcelain Veneers</li>
@@ -121,6 +132,7 @@
                         </div>
                         <div class="col-sm-3">
                             <ul>
+                                <li>Dental Emergencies</li>
                                 <li>Crowns</li>
                                 <li>Dentures</li>
                                 <li>Endodontic Procedures (Root Canal)</li>
@@ -227,7 +239,7 @@
                                             </tr>
                                             <tr>
                                                 <th>Friday</th>
-                                                <td><time itemprop="openingHours" content="Mo 8:00-15:00">8:00am - 3:00pm</time></td>
+                                                <td><time itemprop="openingHours" content="Mo 8:00-14:00">8:00am - 2:00pm</time></td>
                                             </tr>
                                             <tr>
                                                 <th>Saturday</th>
@@ -254,9 +266,9 @@
                     <p>He is a member of the American Dental Association, Michigan Dental Association, and Kalamazoo Valley District Dental Society.  He participates in many continuing education courses throughout the year.</p>
 
                     <h3>Office Staff</h3>
-                    <p>The front desk is primarily run by Kris Swope.  She has been part of the practice for over 30 years and has the answers to your questions.  Brenda Schimp also works at our front desk on Wednesdays.  She will greet you with a smile and is very willing and able to help you with your insurance or billing questions.</p>
-                    <p>Jodi Cole is Dr. Ford’s assistant.  She has been with the practice for almost 10 years.  She is very good at making you feel comfortable during procedures and always has a warm friendly smile.</p>
-                    <p>Heidi, Kris, and Mary Ann are the hygenists.  They all do an excellent job cleaning your teeth while keeping you comfortable.  They are a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
+                    <p>The office is managed by Kris McGlothlen. The front desk is ran by Kris Swope. She has been part of the practice for over 30 years and has the answers to your questions. She is joined by Brenda and Dawn, who will greet you with a smile and are very willing and able to help you with your insurance or billing questions.</p>
+                    <p>Dianne, Jody, and Lori are Dr. Ford's assistants. They bring over 10 years combined experience to the practice. They are very good at making you feel comfortable during procedures and always have warm friendly smiles.</p>
+                    <p>Dana, Heidi, Jen, MaryAnn, Linda, and Jamie are the hygenists.  They all do an excellent job cleaning your teeth while keeping you comfortable.  They are a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
                 </div>
             </section>
 
