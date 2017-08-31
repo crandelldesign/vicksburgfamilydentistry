@@ -93,7 +93,7 @@ $app->post('/', function ($request, $response, $args) {
         // Send the Email
         $message = $mgClient->sendMessage($domain, array(
             'from'    => 'Vicksburg Family Dentistry Website <postmaster@mailgun.vicksburgfamilydentistry.org>',
-            'to'      => 'Vicksburg Family Dentistry <vicksburgfamilydentisty@gmail.com>'
+            'to'      => 'Vicksburg Family Dentistry <vicksburgfamilydentisty@gmail.com>',
             'bcc'      => 'Matt Crandell <matt@crandelldesign.com>', // Use comma for 2nd email
             'subject' => 'You\'ve Been Contacted By the Vicksburg Family Dentistry Website',
             'text'    => 'Your mail does not support HTML',
