@@ -85,7 +85,7 @@
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Restorative / Cosmetic Dentistry</h3>
                                 <div class="card-block">
-                                    <p>Utilizing both composite or white fillings and silver fillings when appropriate.</p>
+                                    <p>Utilizing both composite (white)fillings and silver fillings when appropriate.</p>
                                 </div>
                             </div>
                         </div>
