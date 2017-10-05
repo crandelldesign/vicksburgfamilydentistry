@@ -79,13 +79,13 @@
             <section class="section services" id="services">
                 <div class="content">
                     <h2>Services</h2>
-                    <p class="lead">Our expert staffs always provide premium quality service</p>
+                    <p class="lead">Our expert staff always provides premium quality service</p>
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Restorative / Cosmetic Dentistry</h3>
                                 <div class="card-block">
-                                    <p>Utilizing both composite (white)fillings and silver fillings when appropriate.</p>
+                                    <p>Utilizing both composite (white) fillings and amalgam (silver) fillings when appropriate.</p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Crowns / Bridges / Implants</h3>
                                 <div class="card-block">
-                                    <p>Extractions both surgical and simple extractions to include 3rd molars or wisdom teeth.</p>
+                                    <p>Extractions both surgical and simple extractions to include 3rd molars (wisdom teeth).</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="card" data-aos="zoom-in">
                                 <h3 class="card-header">Dentures</h3>
                                 <div class="card-block">
-                                    <p>Complete(top and bottom) Dentures and we also make Partial Dentures.</p>
+                                    <p>Complete (top and bottom) Dentures and we also make Partial Dentures.</p>
                                 </div>
                             </div>
                         </div>
