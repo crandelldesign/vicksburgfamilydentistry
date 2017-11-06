@@ -189,7 +189,7 @@
                                             <?= ((isset($has_error['message']) && $has_error['message']) ? '<span class="help-block">Please leave a message.</span>' : '') ?>
                                         </div>
                                         <div class="form-group <?= ((isset($has_error['recaptcha']) && $has_error['recaptcha']) ? ' has-error' : '')?>"">
-                                            <div class="g-recaptcha" data-sitekey="6LfogCYUAAAAAC7dB1o7Hx4nAYSjTSXgXbthvPJY"></div>
+                                            <div class="g-recaptcha" data-sitekey="<?php echo getenv('RECAPTCHA_SITEKEY') ?>"></div>
                                             <?= ((isset($has_error['recaptcha']) && $has_error['recaptcha']) ? '<span class="help-block">Recaptcha verification has failed.</span>' : '') ?>
                                         </div>
                                         <button type="submit" class="btn btn-deep-cerulean btn-block">Send Message</button>
