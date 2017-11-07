@@ -81,7 +81,6 @@
                             <p class="lead">Dr. Aaron Ford and the staff at Vicksburg Family Dentistry work together as a team to provide high-quality comprehensive care. We take pride in paying close attention to each patient's needs.</p>
                             <p><a href="#services" data-mt-duration="300" class="js-trigger btn btn-lg btn-white-outline">See Our Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a></p>
                         </div>
-
                     </div>
 
                 </div>
