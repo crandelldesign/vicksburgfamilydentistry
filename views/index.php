@@ -216,7 +216,7 @@
                                             <span itemprop="streetAddress">602 West Prairie Street</span><br>
                                             <span itemprop="addressLocality">Vicksburg</span>,
                                             <span itemprop="addressRegion">MI</span>
-                                            <span itemprop="postalCode">49009</span>
+                                            <span itemprop="postalCode">49097</span>
                                         </address>
                                         <p><a href="tel:12696491495"><span itemprop="telephone">269-649-1495</span></a></p>
                                         <p><a href="https://maps.google.com/?cid=15946836643540095399" itemprop="maps">View on Google Maps</a></p>
@@ -282,7 +282,7 @@
             </section>
 
             <footer class="footer">
-                <p>602 West Prairie Street, Vicksburg, MI 49009 &middot; <a href="tel:12696491495">269-649-1495</a></p>
+                <p>602 West Prairie Street, Vicksburg, MI 49097 &middot; <a href="tel:12696491495">269-649-1495</a></p>
                 <p>Copyright &copy; <?php echo date('Y') ?> Vicksburg Family Dentistry. All Rights Reserved.</p>
                 <p>Designated trademarks and brands are the property of their respective owners.</p>
                 <p>Website created by Matt Crandell of <a href="http://www.crandelldesign.com" target="_blank">Crandell Design</a>.</p>
