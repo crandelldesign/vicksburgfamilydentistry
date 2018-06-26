@@ -275,9 +275,9 @@
                     <p>He is a member of the American Dental Association, Michigan Dental Association, and Kalamazoo Valley District Dental Society.  He participates in many continuing education courses throughout the year.</p>
 
                     <h3>Office Staff</h3>
-                    <p>The office is managed by Kris McGlothlen. The front desk is ran by Kris Swope. She has been part of the practice for over 30 years and has the answers to your questions. She is joined by Brenda and Dawn, who will greet you with a smile and are very willing and able to help you with your insurance or billing questions.</p>
-                    <p>Dianne, Jody, and Lori are Dr. Ford's assistants. They bring over 50 years combined experience to the practice. They are very good at making you feel comfortable during procedures and always have warm friendly smiles.</p>
-                    <p>Dana, Heidi, Jen, MaryAnn, Linda, and Jamie are the hygenists.  They all do an excellent job cleaning your teeth while keeping you comfortable.  They are a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
+                    <p>The Office is managed by Kris McGlothlen who brings in 19 years of dental experience. The front desk is ran by Dawn.  She is joined by Brenda and Colleen, who will greet you with a smile and are very willing to help you with your insurance and billing questions.</p>
+                    <p>Dianne and Lori are Dr Ford's assistants.  They bring over 40 years combined experience to the practice.  They are very good at making you feel comfortable during procedures and always have warm friendly smiles.</p>
+                    <p>Heidi, Colleen, Dana, Jen, MaryAnn, Linda and Jamie are our hygienists.  They all do an excellent job cleaning your teeth while keeping you comfortable. They have a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
                 </div>
             </section>
 
