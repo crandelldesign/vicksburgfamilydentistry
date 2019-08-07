@@ -74,12 +74,12 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-sm-4 col-sm-push-8">
-                            <img class="img-responsive" src="/img/dr-ford.jpg" alt="Dr. Ford">
+                            <img class="img-responsive" src="/img/main-office.jpg" alt="Vicksburg Family Dentistry">
                         </div>
                         <div class="col-sm-8 col-sm-pull-4">
                             <h1>Committed to Providing an Exceptional Level of Care and Attention</h1>
                             <p class="lead">Dr. Aaron Ford and the staff at Vicksburg Family Dentistry work together as a team to provide high-quality comprehensive care. We take pride in paying close attention to each patient's needs.</p>
-                            <p><a href="#services" data-mt-duration="300" class="js-trigger btn btn-lg btn-white-outline">See Our Services <i class="fa fa-chevron-down" aria-hidden="true"></i></a></p>
+                            <p><a href="#services" data-mt-duration="300" class="js-trigger btn btn-lg btn-white-outline">See Our Services <i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
                         </div>
                     </div>
 
@@ -219,6 +219,7 @@
                                             <span itemprop="postalCode">49097</span>
                                         </address>
                                         <p><a href="tel:12696491495"><span itemprop="telephone">269-649-1495</span></a></p>
+                                        <p><a href="mailto:vicksbugfamilydentistry@gmail.com"><span itemprop="email">VicksbugFamilyDentistry@gmail.com</span></a>
                                         <p><a href="https://maps.google.com/?cid=15946836643540095399" itemprop="maps">View on Google Maps</a></p>
                                     </div>
                                 </div>
@@ -275,9 +276,9 @@
                     <p>He is a member of the American Dental Association, Michigan Dental Association, and Kalamazoo Valley District Dental Society.  He participates in many continuing education courses throughout the year.</p>
 
                     <h3>Office Staff</h3>
-                    <p>The Office is managed by Kris McGlothlen who brings in 19 years of dental experience. The front desk is ran by Dawn.  She is joined by Brenda and Colleen, who will greet you with a smile and are very willing to help you with your insurance and billing questions.</p>
-                    <p>Dianne and Lori are Dr Ford's assistants.  They bring over 40 years combined experience to the practice.  They are very good at making you feel comfortable during procedures and always have warm friendly smiles.</p>
-                    <p>Heidi, Colleen, Dana, Jen, MaryAnn, Linda and Jamie are our hygienists.  They all do an excellent job cleaning your teeth while keeping you comfortable. They have a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
+                    <p>The Office is managed by Kris McGlothlen who brings in 19 years of dental experience. The front desk is ran by Dawn.  She is joined by Brenda and Cheryl, who will greet you with a smile and are very willing to help you with your insurance and billing questions.</p>
+                    <p>Dianne, Lori, and Nicole are Dr Ford's assistants.  They bring over 40 years combined experience to the practice.  They are very good at making you feel comfortable during procedures and always have warm friendly smiles.</p>
+                    <p>Heidi, Colleen, Dana, Jen, MaryAnn, Tracy and Jamie are our hygienists.  They all do an excellent job cleaning your teeth while keeping you comfortable. They have a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
                 </div>
             </section>
 
