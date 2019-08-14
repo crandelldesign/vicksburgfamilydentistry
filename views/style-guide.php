@@ -84,6 +84,12 @@
                                     #0AB1C7
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch7">
+                                    Old Lace<br>
+                                    #FBF5E9
+                                </div>
+                            </div>
                         </div>
                         <hr>
                         <h1>Buttons</h1>
