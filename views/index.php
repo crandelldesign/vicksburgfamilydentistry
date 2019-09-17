@@ -281,7 +281,17 @@
                     <p>Heidi, Colleen, Dana, Jen, MaryAnn, Tracy and Jamie are our hygienists.  They all do an excellent job cleaning your teeth while keeping you comfortable. They have a wealth of knowledge concerning your oral hygiene needs.  Be sure to ask them anything that may be on your mind concerning your oral hygiene.</p>
                 </div>
             </section>
-
+            <hr>
+            <section class="section form-section">
+                <div class="content">
+                    <h2>Forms</h2>
+                    <ul>
+                        <li><a href="/forms/health-history.pdf" target="_blank">Health History</a></li>
+                        <li><a href="/forms/hipaa.pdf" target="_blank">Notice of Privacy Practices</a></li>
+                        <li><a href="/forms/patient-registration.pdf" target="_blank">Patient Registration</a></li>
+                    </ul>
+                </div>
+            </section>
             <footer class="footer">
                 <p>602 West Prairie Street, Vicksburg, MI 49097 &middot; <a href="tel:12696491495">269-649-1495</a></p>
                 <p>Copyright &copy; <?php echo date('Y') ?> Vicksburg Family Dentistry. All Rights Reserved.</p>
