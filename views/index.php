@@ -219,7 +219,7 @@
                                             <span itemprop="postalCode">49097</span>
                                         </address>
                                         <p><a href="tel:12696491495"><span itemprop="telephone">269-649-1495</span></a></p>
-                                        <p><a href="mailto:vicksbugfamilydentistry@gmail.com"><span itemprop="email">VicksbugFamilyDentistry@gmail.com</span></a>
+                                        <p><a href="mailto:vicksburgfamilydentistry@gmail.com"><span itemprop="email">vicksburgfamilydentistry@gmail.com</span></a>
                                         <p><a href="https://maps.google.com/?cid=15946836643540095399" itemprop="maps">View on Google Maps</a></p>
                                     </div>
                                 </div>
